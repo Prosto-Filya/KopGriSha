@@ -33,5 +33,5 @@ class PaintingCostCalculator:
         color_coeff = self.COLOR_COEFFICIENTS[self.color]
 
         # Рассчитываем стоимость услуги
-        total_cost = self.BASE_COST * part_coeff * color_coeff
+        total_cost = self.BASE_COST * (part_coeff * color_coeff)
         return total_cost
