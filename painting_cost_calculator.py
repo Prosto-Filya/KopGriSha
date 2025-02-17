@@ -6,7 +6,7 @@ class PaintingCostCalculator:
     BASE_COST = 12000
 
     # Словари с коэффициентами для цвета и детали
-    COLOR_COEFFICIENTS = { "белый": 1, "синий": 1, "желтый": 1.1, "красный": 1, "перламутровый": 1.2, "серый металлик": 1.3 }
+    COLOR_COEFFICIENTS = { "белый": 1, "синий": 1, "желтый": 1.1, "красный": 1, "перламутровый": 1.2, "серый металлик": 1.3, "черный": 2}
 
     PART_COEFFICIENTS = { "капот": 1, "передняя дверь": 1.2, "задняя дверь": 1.1, "передний бампер": 1, "задний бампер": 1, "крыша": 1.1 }
 # Инициализация экземпляра класса.
@@ -33,5 +33,5 @@ class PaintingCostCalculator:
         color_coeff = self.COLOR_COEFFICIENTS[self.color]
 
         # Рассчитываем стоимость услуги
-        total_cost = self.BASE_COST * part_coeff * color_coeff
+        total_cost = self.BASE_COST * (part_coeff * color_coeff)
         return total_cost
