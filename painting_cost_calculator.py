@@ -34,4 +34,4 @@ class PaintingCostCalculator:
 
         # Рассчитываем стоимость услуги
         total_cost = self.BASE_COST * (part_coeff * color_coeff)
-        return total_cost
+        return total_cost # Тут будет ответ
